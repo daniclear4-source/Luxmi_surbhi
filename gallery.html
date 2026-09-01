@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-font-size="medium">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo & Media Gallery | Laxmi Surbhi NGO</title>
+  <meta name="description" content="Visual record of Laxmi Surbhi NGO's community companionship, senior care activities, and recreational gatherings in Jharkhand.">
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-badges">
+        <span class="top-badge-item top-badge-gold"><i class="fas fa-certificate"></i> Reg. No: 690</span>
+        <span class="top-badge-item"><i class="fas fa-calendar-check"></i> Est. 2007</span>
+        <span class="top-badge-item"><i class="fas fa-location-dot"></i> Chakradharpur & Jamshedpur, Jharkhand</span>
+      </div>
+
+      <div class="accessibility-panel" aria-label="Accessibility settings">
+        <span style="font-size: 0.75rem; color: #d6e2dc; margin-right: 4px;"><i class="fas fa-universal-access"></i> Text:</span>
+        <button type="button" class="font-size-btn" data-size="small" title="Small text">A-</button>
+        <button type="button" class="font-size-btn active" data-size="medium" title="Default text">A</button>
+        <button type="button" class="font-size-btn" data-size="large" title="Large text">A+</button>
+        <button type="button" class="font-size-btn" data-size="xlarge" title="Extra large text">A++</button>
+        <button type="button" class="contrast-btn" id="contrast-toggle-btn" title="Toggle High Contrast Mode"><i class="fas fa-adjust"></i> Contrast</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Laxmi Surbhi NGO Homepage">
+        <img src="images/logo.png" alt="Laxmi Surbhi NGO Logo" class="brand-logo-img">
+        <div class="logo-text-group">
+          <span class="logo-brand-name">LAXMI SURBHI</span>
+          <span class="logo-tagline">Senior Care & Support</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="our-work.html" class="nav-link">Our Work</a></li>
+          <li><a href="projects.html" class="nav-link">Projects & Campaigns</a></li>
+          <li><a href="impact.html" class="nav-link">Impact</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="news.html" class="nav-link">News & Stories</a></li>
+          <li><a href="get-involved.html" class="nav-link">Get Involved</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+          <li><a href="donate.html" class="btn-donate-nav"><i class="fas fa-heart"></i> Donate Now</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1 class="page-banner-title">Community Photo & Media Gallery</h1>
+        <p class="page-banner-subtitle">
+          Moments of companionship, care, cultural celebrations, and volunteer service across Chakradharpur and Jamshedpur.
+        </p>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> <i class="fas fa-chevron-right" style="font-size: 0.65rem;"></i> <span>Gallery</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+      <div class="container">
+        <!-- Filter Controls -->
+        <div class="gallery-filters">
+          <button type="button" class="gallery-filter-btn active" data-filter="all">All Moments</button>
+          <button type="button" class="gallery-filter-btn" data-filter="companionship">Companionship & Visits</button>
+          <button type="button" class="gallery-filter-btn" data-filter="health">Health & Check-Ins</button>
+          <button type="button" class="gallery-filter-btn" data-filter="recreation">Recreational & Cultural</button>
+          <button type="button" class="gallery-filter-btn" data-filter="digital">Digital Support</button>
+          <button type="button" class="gallery-filter-btn" data-filter="volunteers">Volunteers & Community</button>
+        </div>
+
+        <!-- Media Grid -->
+        <div class="gallery-grid">
+          <!-- Item 1 -->
+          <div class="gallery-item" data-category="companionship" data-description="Authorised volunteers visiting senior citizens at home in Chakradharpur for friendly interaction, emotional comfort, and heartfelt listening.">
+            <div class="gallery-media">
+              <img src="images/card-home-visit.jpg" alt="Friendly home visit and listening session" loading="lazy">
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-category">Companionship</div>
+              <div class="gallery-caption">Friendly Home Visit & Listening Session</div>
+              <div class="gallery-desc">Personalized companionship to reduce isolation and build a caring second family.</div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-item" data-category="health" data-description="Assisting senior citizens in scheduling doctor appointments and coordinating healthcare services with local medical practitioners.">
+            <div class="gallery-media">
+              <img src="images/card-doctor-senior.jpg" alt="Healthcare facilitation and wellness check-in" loading="lazy">
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-category">Health & Wellness</div>
+              <div class="gallery-caption">Doctor Appointment & Wellness Linkage</div>
+              <div class="gallery-desc">Facilitating professional medical access and ongoing wellness follow-ups.</div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-item" data-category="recreation" data-description="Senior citizens gathering for festive celebrations, cultural programmes, music, and interactive community games in Jamshedpur.">
+            <div class="gallery-media">
+              <img src="images/card-festival-seniors.jpg" alt="Cultural festival celebration and senior gathering" loading="lazy">
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-category">Recreational & Cultural</div>
+              <div class="gallery-caption">Festival Celebration & Get-Together</div>
+              <div class="gallery-desc">Creating vibrant opportunities for community participation and joyful shared moments.</div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-item" data-category="digital" data-description="One-on-one digital literacy guidance helping seniors navigate smartphones, WhatsApp, and safe digital payments without fear of scams.">
+            <div class="gallery-media">
+              <img src="images/card-smartphone-elderly.jpg" alt="Digital literacy and smartphone assistance" loading="lazy">
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-category">Digital Support</div>
+              <div class="gallery-caption">Smartphone Guidance & Scam Prevention</div>
+              <div class="gallery-desc">Patient digital literacy training empowering elders to stay connected safely.</div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-item" data-category="volunteers" data-description="Our volunteer team conducting routine welfare check-ins and coordinating local community support resources in Jharkhand.">
+            <div class="gallery-media">
+              <img src="images/card-community-meeting.jpg" alt="Community care coordination meeting" loading="lazy">
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-category">Volunteers & Community</div>
+              <div class="gallery-caption">Community Care Coordination Circle</div>
+              <div class="gallery-desc">Collaborating responsibly to build a dependable neighborhood support network.</div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-item" data-category="companionship" data-description="Volunteers remembering seniors' special milestones, birthdays, and standing beside them as a dependable second family.">
+            <div class="gallery-media">
+              <img src="images/card-birthday-senior.jpg" alt="Remembering important days and milestones" loading="lazy">
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-category">Companionship</div>
+              <div class="gallery-caption">Remembering Important Days & Milestones</div>
+              <div class="gallery-desc">Standing by seniors on their special days to celebrate dignity and belonging.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Lightbox Modal -->
+    <div class="lightbox-modal" id="gallery-lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="lightbox-content">
+        <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close dialog">&times;</button>
+        <div class="lightbox-img-wrapper">
+          <img id="lightbox-img" src="" alt="Laxmi Surbhi NGO Event">
+        </div>
+        <h3 id="lightbox-title" style="color: var(--color-forest-900); font-size: 1.3rem; margin-bottom: 0.6rem;"></h3>
+        <p id="lightbox-desc" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6;"></p>
+        <div style="margin-top: 1.25rem; display:flex; justify-content:space-between; align-items:center; border-top: 1px solid var(--color-cream-border); padding-top: 1rem;">
+          <span class="badge badge-forest"><i class="fas fa-location-dot"></i> Chakradharpur & Jamshedpur</span>
+          <span class="badge badge-gold"><i class="fas fa-certificate"></i> Reg. No. 690</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <img src="images/logo.png" alt="Laxmi Surbhi NGO Logo" class="footer-logo-img">
+            <div>
+              <div style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: #fff; line-height: 1;">LAXMI SURBHI NGO</div>
+              <div style="font-size: 0.72rem; color: var(--color-gold-400); text-transform: uppercase; letter-spacing: 0.1em;">Senior Care & Support Initiative</div>
+            </div>
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: #b5c7bd;">
+            “A Second Family for Every Senior.” Serving with dignity. Supporting with compassion. Standing by our seniors in Chakradharpur and Jamshedpur, Jharkhand.
+          </p>
+          <div style="font-size: 0.85rem; color: #92a49b; margin-top: 1rem;">
+            <div><strong>Established:</strong> 2007</div>
+            <div><strong>Registration Number:</strong> 690</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> About Us</a></li>
+            <li><a href="our-work.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Our Work</a></li>
+            <li><a href="projects.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Projects & Campaigns</a></li>
+            <li><a href="impact.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Impact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Involvement</h4>
+          <ul class="footer-links">
+            <li><a href="gallery.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Photo Gallery</a></li>
+            <li><a href="news.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> News & Stories</a></li>
+            <li><a href="get-involved.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Volunteer With Us</a></li>
+            <li><a href="donate.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Donate Now</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Contact Information</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Official Helpline</h4>
+          <ul class="footer-links">
+            <li><a href="tel:7004852450"><i class="fas fa-phone-alt"></i> 7004852450</a></li>
+            <li><a href="tel:9110040074"><i class="fas fa-phone-alt"></i> 9110040074</a></li>
+            <li><a href="tel:9608888690"><i class="fas fa-phone-alt"></i> 9608888690</a></li>
+            <li><a href="mailto:laxmisurbhi7@gmail.com"><i class="fas fa-envelope"></i> laxmisurbhi7@gmail.com</a></li>
+            <li style="color: #b5c7bd; font-size: 0.85rem; margin-top: 0.5rem;"><i class="fas fa-location-dot"></i> Chakradharpur & Jamshedpur, Jharkhand</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © Laxmi Surbhi NGO (Reg. No: 690, Est. 2007). All verified information extracted from official initiative documentation.
+        </div>
+        <div style="color: var(--color-gold-400); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">
+          Serve • Empower • Transform
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
