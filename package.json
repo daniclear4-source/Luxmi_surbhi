@@ -1,0 +1,27 @@
+{
+  "name": "laxmi-surbhi-ngo-website",
+  "version": "1.0.0",
+  "description": "Official Website for Laxmi Surbhi NGO - a multi-area social impact organisation working across senior citizen care, education, women empowerment, health & wellness, skill development, youth development, environment and community awareness",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "ngo",
+    "social-impact",
+    "community-development",
+    "senior-citizen-care",
+    "education",
+    "women-empowerment",
+    "health-wellness",
+    "skill-development",
+    "youth-development",
+    "environment",
+    "community-awareness",
+    "laxmi-surbhi",
+    "jharkhand"
+  ],
+  "author": "Laxmi Surbhi NGO",
+  "license": "ISC"
+}

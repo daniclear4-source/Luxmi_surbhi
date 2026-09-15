@@ -1,0 +1,220 @@
+/* 
+  Laxmi Surbhi NGO - Master CSS
+  Color System, Typography, Accessibility Variables, Global Base Styles
+*/
+
+:root {
+  --font-serif: 'Poppins', sans-serif;
+  --font-sans: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Official Brand Palette from Document */
+  --color-forest-950: #081a13;
+  --color-forest-900: #0d281e;
+  --color-forest-800: #13392b;
+  --color-forest-700: #1b4931;
+  --color-forest-600: #235d40;
+  --color-forest-500: #2d7752;
+  --color-forest-100: #e8f1ec;
+  --color-forest-50:  #f3f8f5;
+
+  --color-gold-800: #785210;
+  --color-gold-700: #93681a;
+  --color-gold-600: #b58328;
+  --color-gold-500: #c59b3f;
+  --color-gold-400: #d9b15b;
+  --color-gold-200: #f4e5c3;
+  --color-gold-100: #fbf5e6;
+  --color-gold-50:  #fdfaf3;
+
+  --color-cream-bg: #FAF7F2;
+  --color-cream-surface: #FFFFFF;
+  --color-cream-border: #EADBCE;
+  --color-cream-dark: #F2EDE4;
+
+  --color-text-main: #222B27;
+  --color-text-muted: #53615A;
+  --color-text-light: #7E8C86;
+
+  --shadow-sm: 0 1px 3px rgba(13, 40, 30, 0.04);
+  --shadow-md: 0 2px 8px rgba(13, 40, 30, 0.06);
+  --shadow-lg: 0 4px 16px rgba(13, 40, 30, 0.08);
+  --shadow-xl: 0 8px 24px rgba(13, 40, 30, 0.10);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --base-font-size: 16px;
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Accessibility: Font Size Variants */
+html[data-font-size="small"] { --base-font-size: 14px; }
+html[data-font-size="medium"] { --base-font-size: 16px; }
+html[data-font-size="large"] { --base-font-size: 18px; }
+html[data-font-size="xlarge"] { --base-font-size: 20px; }
+
+/* High Contrast Mode */
+html.high-contrast {
+  --color-forest-950: #000000;
+  --color-forest-900: #000000;
+  --color-forest-800: #06190f;
+  --color-forest-700: #0d2f1d;
+  --color-gold-600: #8c5700;
+  --color-gold-500: #9e6400;
+  --color-cream-bg: #FFFFFF;
+  --color-cream-surface: #FFFFFF;
+  --color-cream-border: #000000;
+  --color-text-main: #000000;
+  --color-text-muted: #111111;
+  --color-text-light: #222222;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--base-font-size);
+  line-height: 1.65;
+  background-color: #ffffff;
+  color: var(--color-text-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-serif);
+  color: var(--color-forest-900);
+  line-height: 1.25;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--color-forest-700);
+  text-decoration: none;
+  transition: var(--transition-normal);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Botanical Decorative Dividers */
+.botanical-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0 1.25rem;
+  color: var(--color-gold-600);
+}
+
+.botanical-divider::before,
+.botanical-divider::after {
+  content: "";
+  height: 1px;
+  width: 32px;
+  background: var(--color-cream-border);
+}
+
+.botanical-divider::after {
+  background: var(--color-cream-border);
+}
+
+/* Global Container */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.section-sm {
+  padding: 2.75rem 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 3rem;
+}
+
+.section-tag {
+  display: inline-block;
+  color: var(--color-text-light);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--color-forest-900);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Utility Badges & Tags */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-forest {
+  background: var(--color-forest-100);
+  color: var(--color-forest-800);
+  border: 1px solid rgba(27, 73, 49, 0.18);
+}
+
+.badge-gold {
+  background: var(--color-gold-100);
+  color: var(--color-gold-800);
+  border: 1px solid rgba(197, 155, 63, 0.3);
+}
+
+/* Accessibility Focus States */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--color-gold-500);
+  outline-offset: 2px;
+}
